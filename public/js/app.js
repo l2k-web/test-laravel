@@ -37006,6 +37006,12 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+document.addEventListener("DOMContentLoaded", function (event) {
+  if ($('#description').length > 0) {
+    Laraberg.init('description');
+  }
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
